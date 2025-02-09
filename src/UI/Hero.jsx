@@ -116,6 +116,7 @@ export default function Hero() {
         className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4"
         initial={{ opacity: 0 }}
         animate={animateIn2}
+        data-blobity-tooltip="Ranjith"
       >
         <img
           src={profile}

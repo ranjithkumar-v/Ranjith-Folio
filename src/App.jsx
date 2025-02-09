@@ -4,8 +4,11 @@ import "./App.css";
 import Header from "./UI/Header";
 import Home from "./UI/Home";
 import { useEffect } from "react";
+import { initialBlobityOptions } from "./Animate/blobity.config";
+import useBlobity from "blobity/lib/react/useBlobity";
 
 function App() {
+  const blobity = useBlobity(initialBlobityOptions);
   const navigate = useNavigate();
 
   useEffect(() => {
