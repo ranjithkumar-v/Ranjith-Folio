@@ -41,11 +41,6 @@ export default function Contact() {
   const pubilcKey = import.meta.env.VITE_EMAILJS_PUBLIC_API_KEY;
 
   function onSubmit(data) {
-    console.log(data);
-    console.log("Service ID:", serviceID);
-    console.log("Template ID:", templateID);
-    console.log("Public Key:", pubilcKey);
-
     emailjs.sendForm(serviceID, templateID, formRef.current, pubilcKey).then(
       () => {
         toast.success("Message sent successfully", {
