@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   delay,
   easeIn,
@@ -56,7 +56,26 @@ export default function Hero() {
     if (inView) setSectionInView("home");
   }, [inView, setSectionInView]);
 
-  const rotate = useTransform(scrollYProgress, [0, 1], ["0deg", "-15deg"]);
+  const [rotateValue, setRotateValue] = useState(["0deg", "-10deg"]);
+
+  const rotate = useTransform(scrollYProgress, [0, 1], rotateValue);
+
+  // Adjust rotation based on screen size
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1024) {
+        // Mobile screens (sm)
+        setRotateValue(["0deg", "0deg"]);
+      } else {
+        setRotateValue(["0deg", "-10deg"]);
+      }
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div
@@ -105,8 +124,13 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={animateIn2}
           className="sm:block text-xl font-semibold px-4 py-2 md:px-3 lg:py-4 rounded-xl border-2 border-white leading-none mt-6"
-          onClick={() => window.open("https://drive.google.com/file/d/1PW5wXNIwqCNVn5fCPr_eUWoO2PhKk-6o/view?usp=sharing", "_blank")}
-            >
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1PW5wXNIwqCNVn5fCPr_eUWoO2PhKk-6o/view?usp=sharing",
+              "_blank"
+            )
+          }
+        >
           Resume
         </motion.button>
       </div>
