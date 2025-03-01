@@ -9,14 +9,15 @@ const TimelineData = [
     jobType: "Full Time",
     duration: "2023 - Present",
     stuffIDid: [
-      "Built responsive and dynamic user interfaces using React.js from Scratch, ensuring a seamless user experience across various devices and browsers.",
-      "Implemented efficient state management solutions with Redux, optimizing data flow and improving application performance.",
-      "Created reusable Custom components to enhance productivity and maintainability of the codebase.",
-      "Utilized Ant Design (antd) components to create modern and intuitive user interfaces.",      
-      "Improved site speed by 20% through code splitting and lazy loading.",
+      "Developed a dynamic and responsive UI from scratch using React.js, ensuring 99% cross browser compatibility and optimal performance across all devices.",
+      "Implemented Redux-based state management to optimize data flow, reducing API calls by 40%, improving data processing speed, and enhancing the overall user experience.",
+      "Designed and developed over 10 reusable custom components, enhancing development efficiency by 30% and improving code maintainability",
+      "Integrated Ant Design (Antd) components to enhance UI consistency, resulting in a 25% improvement in user satisfaction based on feedback",
+      "Boosted site performance by 60% through code splitting, lazy loading, and optimization techniques.",
       "Increased user engagement by 30% through intuitive design and improved navigation.",
-      "Collaborated closely with backend developers and designers to integrate APIs and create user-centric designs that met business requirements.",
-      "Participated in agile sprints, and daily stand-ups, ensuring high-quality deliverables and efficient collaboration."
+      "Collaborated with backend developers and designers to deliver API integrated, user-focused features that boosted workflow efficiency by 25% .",
+      "Worked closely  with the designers team to create a pixel-perfect UI, ensuring the best user experience and brand consistency.",
+      "Participated in agile sprints, and daily stand-ups, ensuring high-quality deliverables and efficient collaboration.",
     ],
   },
 ];

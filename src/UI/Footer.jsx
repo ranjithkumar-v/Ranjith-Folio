@@ -12,8 +12,8 @@ export default function Footer() {
       className="my-6 sm:my-8 text-sm sm:text-base lg:text-lg flex md:justify-between justify-center"
     >
       <p>
-        <span className="text-xl sm:text-2xl">&copy;</span> {curYear} .
-        Ranjithkumar . ALL RIGHTS RESERVED
+        <span className="text-xl sm:text-2xl">&copy;</span> {curYear} • Crafted
+        by Ranjithkumar • All Rights Reserved
       </p>
       <a
         className="md:flex hidden items-center gap-1 leading-tight"
@@ -23,9 +23,7 @@ export default function Footer() {
         onClick={() => setSectionInView("home")}
       >
         <Icon icon="mdi:arrow-top" className="text-2xl rounded-2xlt" />
-        <p className="underline leading-tight">
-          SCROLL TO TOP
-        </p>
+        <p className="underline leading-tight">SCROLL TO TOP</p>
       </a>
     </section>
   );
