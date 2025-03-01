@@ -126,7 +126,7 @@ export default function Hero() {
           className="sm:block text-xl font-semibold px-4 py-2 md:px-3 lg:py-4 rounded-xl border-2 border-white leading-none mt-6"
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1PW5wXNIwqCNVn5fCPr_eUWoO2PhKk-6o/view?usp=sharing",
+              "https://drive.google.com/file/d/11_MPmvKz2vUNi9MSxDCnnPDNpuWOnjHs/view?usp=sharing",
               "_blank"
             )
           }
