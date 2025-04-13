@@ -15,7 +15,8 @@ const TimelineData = [
       "Integrated Ant Design (Antd) components to enhance UI consistency, improving user satisfaction by 45% based on feedback.",
       "Optimized site performance by 60% through code splitting, lazy loading, and optimization techniques.",
       "Increased user engagement by 30% through intuitive design and improved navigation.",
-      "Collaborated with backend developers and designers to deliver API integrated, user-focused features that boosted workflow efficiency by 40%."
+      "Collaborated with backend developers and designers to deliver API integrated, user-focused features that boosted workflow efficiency by 40%.",
+      "Participated  in agile sprints, and daily stand-ups, ensuring high-quality deliverables and efficient collaboration.",
     ],
   },
 ];
