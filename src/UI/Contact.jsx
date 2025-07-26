@@ -106,7 +106,7 @@ export default function Contact() {
               <a href="#contact">
                 <span
                   onClick={() => setFormDisplay(!formDisplay)}
-                  className="sm:mt-0 text-xl sm:text-2xl md:text-[32px] w-fit underline lg:text-[40px] font-bold leading-tight hidden sm:block lg:hidden"
+                  className="contactBtn sm:mt-0 text-xl sm:text-2xl md:text-[32px] w-fit underline lg:text-[40px] font-bold leading-tight hidden sm:block lg:hidden"
                 >
                   CONTACT ME
                 </span>
@@ -114,7 +114,7 @@ export default function Contact() {
             </div>
             <a href="#contact">
               <button
-                className="text-base ml-auto mt-6 lg:mt-0 lg:ml-0 block sm:hidden lg:block lg:text-2xl font-semibold px-4 py-2 md:px-3 lg:py-4 rounded-xl border-2 border-white leading-none"
+                className="contactBtn text-base ml-auto mt-6 lg:mt-0 lg:ml-0 block sm:hidden lg:block lg:text-2xl font-semibold px-4 py-2 md:px-3 lg:py-4 rounded-xl border-2 border-white leading-none"
                 onClick={() => setFormDisplay(!formDisplay)}
               >
                 CONTACT&nbsp;ME

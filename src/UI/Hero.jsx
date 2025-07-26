@@ -13,6 +13,7 @@ import { useView } from "../Contexts/ViewContext";
 import "../App.css";
 import handWave from "../assets/Images/hand-wave-lightTone.png";
 import profile from "../assets/Images/Ranjith.jpg";
+import { Typewriter } from "react-simple-typewriter";
 export default function Hero() {
   const handWaveAnimation = {
     rotate: [0, 15, -10, 15, -10, 15, -10, 15, -10, 15, 0],
@@ -106,11 +107,27 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={animateIn1}
         >
-          <p className="text-white/60 inline">I&apos;m </p>
+          <span className="text-white/60">I'm </span>
           <span className="bg-gradient-to-br bg-clip-text text-transparent from-[#7CC0C4] via-[#548FBA] to-[#3C84C7]">
             Ranjithkumar
           </span>
-          <p> Frontend Developer</p>
+          <br />
+          <span className="text-white/80 text-[22px] smm:text-[28px] md:text-[36px] font-medium block mt-4">
+            <Typewriter
+              words={[
+                "Frontend Developer",
+                "Web Developer",
+                "UI/UX Developer",
+                "Software Engineer",
+              ]}
+              loop
+              cursor
+              cursorStyle="|"
+              typeSpeed={90}
+              deleteSpeed={90}
+              delaySpeed={2000}
+            />
+          </span>
         </motion.h1>
 
         <motion.p
@@ -126,7 +143,7 @@ export default function Hero() {
           className="sm:block text-xl font-semibold px-4 py-2 md:px-3 lg:py-4 rounded-xl border-2 border-white leading-none mt-6"
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1GTzAZ1hsSnA4NEuxftGtJiFcuf0-SF3b/view?usp=drive_link",
+              "https://drive.google.com/file/d/1EK6Yisng4MZ2_4zJG03y6zXKrhiAflo5/view",
               "_blank"
             )
           }
@@ -136,7 +153,7 @@ export default function Hero() {
       </div>
       <motion.div
         ref={imgRef}
-        style={{ rotate }}
+        // style={{ rotate }}
         className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4"
         initial={{ opacity: 0 }}
         animate={animateIn2}
@@ -149,6 +166,17 @@ export default function Hero() {
           style={{ borderRadius: "10%" }}
         />
       </motion.div>
+      {/* <motion.img
+        src={profile}
+        alt="Ranjith's picture"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1 }}
+        // className="w-90 h-80 rounded-full"
+        style={{borderRadius:"20%"}}
+        className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4  object-cover shadow-lg"
+
+      /> */}
     </div>
   );
 }
