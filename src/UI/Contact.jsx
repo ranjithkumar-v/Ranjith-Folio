@@ -173,7 +173,7 @@ export default function Contact() {
                       className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-none py-1 pl-2"
                     />
                     {errors?.userName && (
-                      <span className="text-red-400 text-xs">
+                      <span className="text-red-400 text-sm">
                         {errors?.userName?.message}
                       </span>
                     )}
@@ -189,7 +189,7 @@ export default function Contact() {
                       id="userEmail"
                       type="email"
                       {...register("userEmail", {
-                        required: "Enter a correct email address",
+                        required: "Enter email address",
                         pattern: {
                           value: /\S+@\S+\.\S+/,
                           message: "Please provide a valid email address",
@@ -198,7 +198,7 @@ export default function Contact() {
                       className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-none py-1 pl-2"
                     />
                     {errors?.userEmail && (
-                      <span className="text-red-400 text-xs">
+                      <span className="text-red-400 text-sm">
                         {errors?.userEmail?.message}
                       </span>
                     )}
@@ -213,14 +213,14 @@ export default function Contact() {
                     <textarea
                       id="userMessage"
                       {...register("userMessage", {
-                        required: "I'll appreciate what you have to say.",
+                        required: "Let us know what’s on your mind.",
                       })}
                       rows={4}
                       cols={50}
                       className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-none py-1 pl-2"
                     />
                     {errors?.userMessage && (
-                      <span className="text-red-400 text-xs">
+                      <span className="text-red-400 text-sm">
                         {errors?.userMessage?.message}
                       </span>
                     )}
