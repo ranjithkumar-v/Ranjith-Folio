@@ -143,7 +143,7 @@ export default function Hero() {
           className="sm:block text-xl font-semibold px-4 py-2 md:px-3 lg:py-4 rounded-xl border-2 border-white leading-none mt-6"
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1EK6Yisng4MZ2_4zJG03y6zXKrhiAflo5/view",
+              "https://drive.google.com/file/d/1m05BumEEqngWeJLNFgauBDuy3db3_rwt/view?usp=drive_link",
               "_blank"
             )
           }

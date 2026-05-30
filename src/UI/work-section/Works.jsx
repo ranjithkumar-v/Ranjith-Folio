@@ -7,10 +7,30 @@ import FolioCard from "./FolioCard";
 import Title from "../../Animate/Title";
 import keeperapp from "../../assets/Images/keeperApp.png";
 import simonGame from "../../assets/Images/simonGame.png";
+import spendsense from "../../assets/Images/SpendSpense.png";
+import astra from "../../assets/Images/Astra.png";
 export default function Works() {
   const { setSectionInView } = useView();
 
   const works = [
+    {
+      title: "SpendSense",
+      liveLink: "https://spendsense-ai.netlify.app/",
+      about:
+        "Developed an AI-powered expense tracking web application, enabling users to monitor, categorize, and optimize personal finances in real time. Integrated AI-driven expense categorization and personalized financial insights using Claude APIs to automate spending analysis and improve financial decision-making. Developed interactive dashboards with Recharts to visualize spending trends and expense categories.",
+      stack: ["React", "Tailwind CSS", "Claude APIs", "Recharts"],
+      img: spendsense,
+      gitLink: "https://github.com/ranjithkumar-v/SpendSense-AI-powered",
+    },
+    {
+      title: "Astra",
+      liveLink: "https://slicnb.shriramlife.me/statimliastra",
+      about:
+        "Engineered a dynamic B2B insurance platform using React.js, Redux, and Ant Design, reducing development time by 40%, streamlining agent onboarding, proposal and policy creation workflows, implementing API-driven dynamic forms, role-based access control, reusable components, and optimized state management, while improving rendering performance by 30% and enhancing productivity through real-time validations and multi-step workflows.",
+      stack: ["React", "Redux", "REST APIs", "Ant Design","Bootstrap"],
+      img: astra,
+      // gitLink: "https://github.com/ranjithkumar-v/SpendSense-AI-powered",
+    },
     {
       title: "Keeper App",
       liveLink: "https://reactjs-keeper-app.netlify.app/",
